@@ -142,7 +142,7 @@ When user tries to create entity "E1" using endpoint "<endpoint_to_be_used>"
 Then user gets "201" and can verify entity details in response json of user "E1"
 
 When user tries to update entity "E1" by using endpoint "<endpoint_to_be_used>" but with "invalid" parameters
-Then user gets "204" in update response of entity "E1"
+Then user gets "422" in update response of entity "E1"
 
 Examples: API
 | endpoint_to_be_used |
@@ -159,7 +159,7 @@ When user tries to create entity "E1" using endpoint "<endpoint_to_be_used>"
 Then user gets "201" and can verify entity details in response json of user "E1"
 
 When user tries to update entity "E1" by using endpoint "<endpoint_to_be_used>" but with "no_payload" parameters
-Then user gets "204" in update response of entity "E1"
+Then user gets "422" in update response of entity "E1"
 
 Examples: API
 | endpoint_to_be_used |
